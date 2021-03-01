@@ -56,7 +56,7 @@ body{
 /*Styling the Event Detail Box */
  .EventDiv{
     width: 50.2vw;
-    height: 11.5vw;
+    height: 11vw;
     background-color: #2599BF;
     margin: 0;
     color: #ffffff; 
@@ -97,11 +97,7 @@ body{
 .eventTimePassed{
     font-size: 1.2vw;
     font-weight: bold;
-    display: inline;
+    display:none;
     padding-top: 0.9vw;
-}
-#TimePassedValue{
-    font-size: 1.2vw;
-    font-weight: bold;
 }
 
