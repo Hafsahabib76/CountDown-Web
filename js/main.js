@@ -1,4 +1,4 @@
-var eventDate = "Mar 1, 2021 00:00:01";
+var eventDate = "Mar 4, 2021 00:00:01";
 var eventTitle = "Siemens";
 var eventSubtitle = "New Organization Day 1";
 var showDate = true;
@@ -7,10 +7,8 @@ document.getElementById("eventTitle").innerHTML = eventTitle;
 
 if (showDate == true){
     document.getElementById("eventDate").innerHTML = eventDate;
-    document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
-} else {
-    document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
 }
+document.getElementById("eventSubtitle").innerHTML = eventSubtitle;
 
 var eventDateTime = new Date(eventDate).getTime(); 
 
@@ -32,9 +30,9 @@ var x = setInterval(
         
         //Displaying the Result
         document.getElementById("day").innerHTML =days ; 
-        document.getElementById("hour").innerHTML =hours; 
-        document.getElementById("minute").innerHTML = minutes;  
-        document.getElementById("second").innerHTML =seconds;  
+        document.getElementById("hour").innerHTML = ('0' + hours).slice(-2); 
+        document.getElementById("minute").innerHTML = ('0' + minutes).slice(-2);
+        document.getElementById("second").innerHTML = ('0' + seconds).slice(-2);
 
         //If CountDown is Over. Set the null values.
         if (RemainingDateTime < 0) { 
@@ -45,3 +43,4 @@ var x = setInterval(
                 document.getElementById("second").innerHTML = '00'; } 
     }, 1000
 ); 
+
