@@ -1,4 +1,4 @@
-var eventDate = "Mar 1, 2021 00:00:01";
+var eventDate = "Mar 3, 2021 00:00:01";
 var eventTitle = "Siemens";
 var eventSubtitle = "New Organization Day 1";
 var TimePassedLabel = "Time Passed: "
